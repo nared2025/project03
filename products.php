@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/php/db.php';
+?>
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -15,7 +18,7 @@
             <div class="logo">🐾 Pawland</div>
             <ul class="nav-links">
                 <li><a href="index.html">หน้าแรก</a></li>
-                <li><a class="active" href="products.html">สินค้า</a></li>
+                <li><a class="active" href="products.php">สินค้า</a></li>
                 <li><a href="about.html">เกี่ยวกับเรา</a></li>
                 <li><a href="contact.html">ติดต่อ</a></li>
             </ul>
