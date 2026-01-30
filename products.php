@@ -21,6 +21,7 @@ require_once __DIR__ . '/php/db.php';
                 <li><a class="active" href="products.php">สินค้า</a></li>
                 <li><a href="about.html">เกี่ยวกับเรา</a></li>
                 <li><a href="contact.html">ติดต่อ</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -34,6 +35,7 @@ require_once __DIR__ . '/php/db.php';
         </div>
         
         <div class="category-tabs">
+            
             <button class="tab-btn active" data-category="all">ทั้งหมด</button>
             <button class="tab-btn" data-category="dog">ขายหมา</button>
             <button class="tab-btn" data-category="cat">ขายแมว</button>
@@ -53,6 +55,7 @@ require_once __DIR__ . '/php/db.php';
 
     <!-- Cart Modal -->
     <div class="cart-modal" id="cartModal">
+        
         <div class="cart-modal-content">
             <div class="cart-modal-header">
                 <h2>ตะกร้าสินค้า</h2>
