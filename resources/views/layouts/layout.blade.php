@@ -22,6 +22,20 @@
                         <li><a href="{{ Route('photos.index') }}">🛍️ สินค้า</a></li>
                         <li><a href="{{ Route('photos.about') }}">ℹ️ เกี่ยวกับเรา</a></li>
                         <li><a href="{{ Route('photos.contact') }}">📧 ติดต่อ</a></li>
+                        @auth
+                            @if (auth()->user()->role === 'admin')
+                             <li><a href="{{ Route('dashboard') }}">จัดการสินค้า</a></li>
+                                <li>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button type="submit" class="nav-link">
+                                            🚪 ออกจากระบบ
+                                        </button>
+                                    </form>
+                                </li>
+                            @endif
+                        @endauth
+                        {{-- <li><a href="#">เข้าสู่ระบบ</a></li> --}}
                     </ul>
                 </div>
             </nav>
